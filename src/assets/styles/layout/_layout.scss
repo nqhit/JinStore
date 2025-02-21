@@ -1,0 +1,16 @@
+@import '../base/variables';
+
+:root {
+  font-family: $font-body;
+  line-height: 1.6;
+  font-weight: 400;
+  color: $color-dark-text;
+  background-color: $color-main-background;
+}
+
+.container {
+  box-sizing: border-box;
+  max-width: $container;
+  margin: 0 auto;
+  padding: 0 20px;
+}

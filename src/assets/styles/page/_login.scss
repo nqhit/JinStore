@@ -1,0 +1,81 @@
+@import '../base/variables';
+
+.login-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  background-color: white;
+}
+
+.login-heading {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.register {
+  font-size: 16px;
+  color: gray;
+  margin-left: 10px;
+}
+
+.login-subtext {
+  color: gray;
+  margin-bottom: 15px;
+}
+
+.login-field {
+  text-align: left;
+  margin-bottom: 15px;
+
+  label {
+    display: block; /* Đảm bảo label không bị dính vào input */
+    margin-bottom: 5px;
+    font-weight: 500;
+  }
+
+  input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    box-sizing: border-box; /* Fix lỗi kích thước input */
+  }
+}
+
+.login-checkbox-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 15px 0;
+
+  input {
+    margin-right: 5px;
+  }
+
+  .login-label {
+    flex-grow: 1; /* Đảm bảo khoảng cách không bị dính */
+  }
+
+  .login-link {
+    color: #6a5acd;
+    text-decoration: none;
+  }
+}
+
+.login-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #6a5acd;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 10px;
+}
