@@ -8,7 +8,7 @@ const __dirname = path.dirname(__filename);
 
 export default defineConfig({
   plugins: [react()],
-  base: '/JinStore.com/',
+  base: '/JinStore/',
   resolve: {
     alias: {
       '~': path.resolve(__dirname, 'src'), // Trỏ đến src
