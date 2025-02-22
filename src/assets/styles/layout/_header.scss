@@ -1,6 +1,10 @@
 @import '../base/variables';
 
 .header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
   background-color: #fff;
 
   // Thanh trên cùng
@@ -62,7 +66,7 @@
   // Thanh chính
   &__main {
     width: 100%;
-    // border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
     &-content {
       display: flex;
       flex-direction: row;

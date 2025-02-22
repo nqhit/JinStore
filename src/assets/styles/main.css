@@ -125,6 +125,10 @@ html {
 }
 
 .header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
   background-color: #fff;
 }
 .header__top {
@@ -172,6 +176,7 @@ html {
 }
 .header__main {
   width: 100%;
+  border-bottom: 1px solid #ddd;
 }
 .header__main-content {
   display: flex;

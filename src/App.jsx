@@ -2,7 +2,7 @@ import { Routes, Route } from 'react-router-dom';
 
 import Header from './components/layout/Header';
 import Footer from './components/layout/Footer';
-// import Notification__bar from './components/layout/Notificationbar';
+import Notification__bar from './components/layout/Notificationbar';
 import Home from './pages/Home';
 import About from './pages/About';
 import Login from './pages/Login';
@@ -11,7 +11,7 @@ import { Fragment } from 'react';
 const App = () => {
   return (
     <Fragment>
-      {/* <Notification__bar /> */}
+      <Notification__bar />
       <Header />
       <div className="container">
         <Routes>
