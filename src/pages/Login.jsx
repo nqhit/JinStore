@@ -50,10 +50,12 @@ const Login = () => {
           />
         </div>
         <div className="login-checkbox-container">
-          <input type="checkbox" checked={rememberMe} onChange={() => setRememberMe(!rememberMe)} id="remember-me" />
-          <label htmlFor="remember-me" className="login-label">
-            Remember me
-          </label>
+          <div className="login-checkbox-left">
+            <input type="checkbox" checked={rememberMe} onChange={() => setRememberMe(!rememberMe)} id="remember-me" />
+            <label htmlFor="remember-me" className="login-label">
+              Remember me
+            </label>
+          </div>
           <a href="#" className="login-link">
             Lost your password?
           </a>

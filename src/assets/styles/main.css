@@ -330,7 +330,7 @@ html {
 }
 
 .login-container {
-  max-width: 400px;
+  max-width: 480px;
   margin: 50px auto;
   padding: 20px;
   border: 1px solid #e0e0e0;
@@ -353,6 +353,10 @@ html {
 }
 
 .login-subtext {
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19.5px; /* 150% */
   color: gray;
   margin-bottom: 15px;
 }
@@ -368,9 +372,11 @@ html {
 }
 .login-field input {
   width: 100%;
-  padding: 10px;
-  border-radius: 4px;
-  border: 1px solid #ccc;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  background: #fff;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
   box-sizing: border-box; /* Fix lỗi kích thước input */
 }
 
@@ -405,14 +411,17 @@ html {
 }
 
 button {
+  width: 100%;
   cursor: pointer;
-  padding: 10px 16px;
   border: none;
   border-radius: 5px;
   background-color: #634c9f;
   color: #ffffff;
-  font-size: 1rem;
   transition: 0.3s;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 42px;
 }
 button:hover {
   background-color: #6a5acd;

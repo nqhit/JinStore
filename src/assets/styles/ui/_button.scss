@@ -1,13 +1,17 @@
-@import '../base/variables'; 
+@import '../base/variables';
 button {
+  width: 100%;
   cursor: pointer;
-  padding: 10px 16px;
   border: none;
   border-radius: 5px;
   background-color: $color-primary-purple;
   color: $color-main-background;
-  font-size: 1rem;
   transition: 0.3s;
+
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 42px;
 
   &:hover {
     background-color: #6a5acd;
