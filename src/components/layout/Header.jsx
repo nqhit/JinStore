@@ -1,4 +1,4 @@
-import { Fragment } from 'react';
+import { Fragment, useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Button from '@components/ui/Button';
 
@@ -10,6 +10,18 @@ import iconheart from '@assets/icons/icon-heart.svg';
 import actor from '@assets/icons/actor.svg';
 
 const Header = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  // Đóng dropdown khi click ra ngoài
+  useEffect(() => {
+    function handleClickOutside(event) {
+      if (!event.target.closest('.header__account-container')) {
+        setIsOpen(false);
+      }
+    }
+    document.addEventListener('click', handleClickOutside);
+    return () => document.removeEventListener('click', handleClickOutside);
+  }, []);
   return (
     <Fragment>
       <header className="header">
@@ -59,10 +71,21 @@ const Header = () => {
               </div>
             </div>
             <div className="header__icons">
-              <Button type="submit" className="header__account">
-                <img src={actor} alt="Actor" />
-                <strong>Account</strong>
-              </Button>
+              {/* Nút Account */}
+              <div className="header__account-container">
+                <Button onClick={() => setIsOpen(!isOpen)} className="header__account">
+                  <img src={actor} alt="Actor" />
+                  <strong>Account</strong>
+                </Button>
+
+                {/* Dropdown menu */}
+                {isOpen && (
+                  <div className="dropdown-menu">
+                    <Link to="/login">Sign In</Link>
+                    <Link to="/register">Create an Account</Link>
+                  </div>
+                )}
+              </div>
               <div className="header__wishlist">
                 <i className="icon-heart"></i>
                 <img src={iconheart} alt="icon-heart" />

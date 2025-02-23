@@ -28,7 +28,7 @@ const Login = () => {
         Login <span className="register">Register</span>
       </div>
       <p className="login-subtext">If you have an account, sign in with your username or email address.</p>
-      <form className='login-form' onSubmit={handleLogin}>
+      <form className="login-form" onSubmit={handleLogin}>
         <div className="login-field">
           <label>Username or email address *</label>
           <input
@@ -60,7 +60,9 @@ const Login = () => {
             Lost your password?
           </a>
         </div>
-        <Button title="Login" type="submit" />
+        <Button to="/Login" type="submit">
+          Login
+        </Button>
       </form>
       <p>
         No account?{' '}
