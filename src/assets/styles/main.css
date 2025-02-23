@@ -186,9 +186,7 @@ html {
   max-width: 1360px;
   margin: 0 auto;
   padding: 16px 20px;
-}
-.header__main .header__logo {
-  margin-right: 21px;
+  gap: 20px;
 }
 .header__main .header__logo img {
   height: 39.123px;
@@ -209,22 +207,21 @@ html {
   flex: 1;
   display: flex;
   align-items: center;
-  margin: 0 20px;
+  justify-content: space-between;
   border-radius: 8px;
   background-color: #f3f4f6;
 }
 .header__main .header__search input {
   width: 100%;
-  padding: 14.5px 62px 14.5px 18px;
+  padding: 14.5px 45px 14.5px 18px;
   align-items: center;
   border: none;
   background-color: transparent;
 }
 .header__main .header__search-button {
+  padding: 0 14.5px;
   background: transparent;
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-  border-left: 1px solid #ddd;
+  border-left: 1px solid #a5a5a5;
   cursor: pointer;
 }
 .header__main .header__icons {
@@ -233,26 +230,20 @@ html {
   gap: 15px;
 }
 .header__main .header__icons .header__account {
+  padding: 0;
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 20px;
-}
-.header__main .header__icons .header__account p {
-  font-size: 1.1rem;
-  font-weight: 400;
-  line-height: 13.2px;
-  opacity: 0.7;
-  color: #030712;
+  background-color: transparent;
 }
 .header__main .header__icons .header__account strong {
   color: #030712;
-  font-size: 13px;
+  font-size: 15px;
   font-style: normal;
   font-weight: 500;
   line-height: 15.6px; /* 120% */
-  letter-spacing: -0.32px;
 }
 .header__main .header__icons .header__wishlist,
 .header__main .header__icons .header__cart {
@@ -328,7 +319,6 @@ html {
 }
 
 .home {
-  height: 1000vh;
   border: 2px solid #dc2626;
   width: 400px;
   border-radius: 8px;
@@ -344,19 +334,11 @@ html {
   text-align: center;
   background-color: white;
 }
-
 .login-heading {
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 10px;
 }
-
-.register {
-  font-size: 16px;
-  color: gray;
-  margin-left: 10px;
-}
-
 .login-subtext {
   font-size: 1.3rem;
   font-style: normal;
@@ -365,7 +347,9 @@ html {
   color: gray;
   margin-bottom: 15px;
 }
-
+.login-form {
+  margin-bottom: 15px;
+}
 .login-field {
   text-align: left;
   margin-bottom: 15px;
@@ -384,24 +368,23 @@ html {
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
   box-sizing: border-box; /* Fix lỗi kích thước input */
 }
-
 .login-checkbox-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin: 15px 0;
 }
-.login-checkbox-container input {
+.login-checkbox-container .login-checkbox-left input {
+  cursor: pointer;
   margin-right: 5px;
 }
-.login-checkbox-container .login-label {
-  flex-grow: 1; /* Đảm bảo khoảng cách không bị dính */
+.login-checkbox-container .login-checkbox-left .login-label {
+  cursor: pointer;
 }
 .login-checkbox-container .login-link {
   color: #6a5acd;
   text-decoration: none;
 }
-
 .login-button {
   width: 100%;
   padding: 10px;
@@ -413,6 +396,12 @@ html {
   font-size: 16px;
   font-weight: bold;
   margin-top: 10px;
+}
+
+.register {
+  font-size: 16px;
+  color: gray;
+  margin-left: 10px;
 }
 
 button {

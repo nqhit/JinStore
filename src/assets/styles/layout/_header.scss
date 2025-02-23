@@ -75,9 +75,9 @@
       max-width: $container;
       margin: 0 auto;
       padding: 16px 20px;
+      gap: 20px;
     }
     .header__logo {
-      margin-right: 21px;
       img {
         height: 39.123px;
       }
@@ -100,23 +100,24 @@
       flex: 1;
       display: flex;
       align-items: center;
-      margin: 0 20px;
+      justify-content: space-between;
       border-radius: 8px;
       background-color: #f3f4f6;
 
       input {
         width: 100%;
-        padding: 14.5px 62px 14.5px 18px;
+        padding: 14.5px 45px 14.5px 18px;
         align-items: center;
         border: none;
         background-color: transparent;
       }
 
       &-button {
+        padding: 0 14.5px;
         background: transparent;
-        border-top-left-radius: 0;
-        border-bottom-left-radius: 0;
-        border-left: 1px solid #ddd;
+        // border-top-left-radius: 0;
+        // border-bottom-left-radius: 0;
+        border-left: 1px solid #a5a5a5;
         cursor: pointer;
       }
     }
@@ -127,25 +128,19 @@
       gap: 15px;
 
       .header__account {
+        padding: 0;
         cursor: pointer;
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 20px;
-        p {
-          font-size: 1.1rem;
-          font-weight: 400;
-          line-height: 13.2px;
-          opacity: 0.7;
-          color: #030712;
-        }
+        background-color: transparent;
         strong {
           color: #030712;
-          font-size: 13px;
+          font-size: 15px;
           font-style: normal;
           font-weight: 500;
           line-height: 15.6px; /* 120% */
-          letter-spacing: -0.32px;
         }
       }
 

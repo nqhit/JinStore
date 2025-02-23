@@ -1,5 +1,7 @@
 import { Fragment } from 'react';
 import { Link } from 'react-router-dom';
+import Button from '@components/ui/Button';
+
 import logotext from '@assets/icons/logotext.png';
 import local from '@assets/icons/local.svg';
 import SearchButton from '@assets/icons/SearchButton.svg';
@@ -52,20 +54,15 @@ const Header = () => {
             </div>
             <div className="header__search">
               <input type="text" placeholder="Search for products, categories or brands..." />
-              <button className="header__search-button">
+              <div className="header__search-button">
                 <img src={SearchButton} alt="Search Button" />
-              </button>
+              </div>
             </div>
             <div className="header__icons">
-              <div className="header__account">
+              <Button type="submit" className="header__account">
                 <img src={actor} alt="Actor" />
-                <Link to="/login">
-                  <p>
-                    Sign In <br />
-                  </p>
-                  <strong>Account</strong>
-                </Link>
-              </div>
+                <strong>Account</strong>
+              </Button>
               <div className="header__wishlist">
                 <i className="icon-heart"></i>
                 <img src={iconheart} alt="icon-heart" />

@@ -24,11 +24,11 @@ const Login = () => {
 
   return (
     <div className="login-container">
-      <h2 className="login-heading">
+      <div className="login-heading">
         Login <span className="register">Register</span>
-      </h2>
+      </div>
       <p className="login-subtext">If you have an account, sign in with your username or email address.</p>
-      <form onSubmit={handleLogin}>
+      <form className='login-form' onSubmit={handleLogin}>
         <div className="login-field">
           <label>Username or email address *</label>
           <input
@@ -62,6 +62,12 @@ const Login = () => {
         </div>
         <Button title="Login" type="submit" />
       </form>
+      <p>
+        No account?{' '}
+        <a href="#" className="create-account-link">
+          Create an account.
+        </a>
+      </p>
     </div>
   );
 };

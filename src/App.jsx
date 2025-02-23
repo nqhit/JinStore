@@ -1,5 +1,4 @@
-import { Routes, Route } from 'react-router-dom';
-
+import { Routes, Route, useLocation } from 'react-router-dom';
 import Header from './components/layout/Header';
 import Footer from './components/layout/Footer';
 import Notification__bar from './components/layout/Notificationbar';
@@ -9,9 +8,12 @@ import Login from './pages/Login';
 import { Fragment } from 'react';
 
 const App = () => {
+  const location = useLocation();
+  const isLoginPage = location.pathname === '/login';
+
   return (
     <Fragment>
-      <Notification__bar />
+      {!isLoginPage && <Notification__bar />}
       <Header />
       <div className="container">
         <Routes>
@@ -19,8 +21,8 @@ const App = () => {
           <Route path="/about" element={<About />} />
           <Route path="/login" element={<Login />} />
         </Routes>
-        <Footer />
       </div>
+      <Footer />
     </Fragment>
   );
 };
