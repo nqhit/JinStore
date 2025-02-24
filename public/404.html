@@ -2,7 +2,20 @@
 <html lang="en">
 
 <head>
-  <meta http-equiv="refresh" content="0; URL=/JinStore/" />
+  <script>
+    // Lấy URL trang trước đó từ localStorage
+    const previousPage = localStorage.getItem("previousPage");
+
+    if (previousPage) {
+      // Xóa URL đã lưu để tránh lặp vô hạn
+      localStorage.removeItem("previousPage");
+
+      // Chuyển hướng về trang trước đó
+      window.location.href = previousPage;
+    } else {
+      document.write("<h1>Trang không tồn tại (404)</h1><p>Không tìm thấy trang trước đó.</p>");
+    }
+  </script>
 </head>
 
 <body>
