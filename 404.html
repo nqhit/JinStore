@@ -2,12 +2,23 @@
 <html lang="en">
 
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test Reload</title>
   <script>
     document.addEventListener("DOMContentLoaded", function () {
+      console.log("DOMContentLoaded fired!");
+
       if (!sessionStorage.getItem("reloaded")) {
+        console.log("Reloading the page...");
         sessionStorage.setItem("reloaded", "true");
-        location.reload();
+
+        // Trì hoãn reload để kiểm tra
+        setTimeout(() => {
+          location.reload();
+        }, 500);
       } else {
+        console.log("Page already reloaded once.");
         sessionStorage.removeItem("reloaded");
       }
     });
@@ -15,6 +26,8 @@
 </head>
 
 <body>
+  <h1>Trang đã tải xong!</h1>
+  <p>Nếu bạn thấy trang này bị tải lại liên tục, hãy kiểm tra console.</p>
 </body>
 
 </html>
