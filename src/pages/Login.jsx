@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import Button from '@components/ui/Button';
 
 const Login = () => {
   const [email, setEmail] = useState('');
@@ -60,9 +59,9 @@ const Login = () => {
             Lost your password?
           </a>
         </div>
-        <Button to="/Login" type="submit">
+        <button type="submit" className="btn login-button">
           Login
-        </Button>
+        </button>
       </form>
       <p>
         No account?{' '}

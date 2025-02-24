@@ -421,7 +421,7 @@ html {
   color: #6a5acd;
   text-decoration: none;
 }
-.login-button {
+.login .login-button {
   width: 100%;
   padding: 10px;
   background-color: #6a5acd;
