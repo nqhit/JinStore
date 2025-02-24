@@ -116,6 +116,7 @@
       }
 
       &-button {
+        border: none;
         flex-grow: 0;
         padding: 9.5px 14.5px;
         background: transparent;
@@ -230,14 +231,16 @@
       list-style: none;
       font-size: 1.5rem;
       font-weight: 600;
-      line-height: 48px;
+      line-height: normal;
 
       li {
         cursor: pointer;
         position: relative;
 
         a {
+          display: inline-block;
           color: $color-dark-text;
+          padding: 14.5px 0;
           text-decoration: none;
         }
 

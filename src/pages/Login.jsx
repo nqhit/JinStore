@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Login = () => {
   const [email, setEmail] = useState('');
@@ -64,10 +65,7 @@ const Login = () => {
         </button>
       </form>
       <p>
-        No account?{' '}
-        <a href="#" className="create-account-link">
-          Create an account.
-        </a>
+        No account? <Link to="/register">Create an Account</Link>
       </p>
     </div>
   );

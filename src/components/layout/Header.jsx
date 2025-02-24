@@ -106,27 +106,25 @@ const Header = () => {
           <div className="header__nav-content">
             <ul className="header__menu">
               <li>
-                <a>
-                  <Link to="/">Home</Link>
-                </a>
+                <Link to="/">Home</Link>
               </li>
               <li /* className="dropdown" */>
-                <a href="#">Shop</a>
+                <Link to="/">Shop</Link>
               </li>
               <li>
-                <a href="#">Fruits & Vegetables</a>
+                <Link to="/">Fruits & Vegetables</Link>
               </li>
               <li>
-                <a href="#">Beverages</a>
+                <Link to="/">Beverages</Link>
               </li>
               <li>
-                <a href="#">Blog</a>
+                <Link to="/">Blog</Link>
               </li>
               <li>
-                <a href="#">Contact</a>
+                <Link to="/">Contact</Link>
               </li>
               <li>
-                <a href="#">About us</a>
+                <Link to="/">About us</Link>
               </li>
             </ul>
           </div>

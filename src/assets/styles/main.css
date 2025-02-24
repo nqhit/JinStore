@@ -115,10 +115,10 @@ html {
   font-weight: 400;
   color: #000000;
   background-color: #ffffff;
+  box-sizing: border-box;
 }
 
 .container {
-  box-sizing: border-box;
   max-width: 1360px;
   margin: 0 auto;
   padding: 0 20px;
@@ -221,6 +221,7 @@ html {
   background-color: transparent;
 }
 .header__main .header__search-button {
+  border: none;
   flex-grow: 0;
   padding: 9.5px 14.5px;
   background: transparent;
@@ -323,14 +324,16 @@ html {
   list-style: none;
   font-size: 1.5rem;
   font-weight: 600;
-  line-height: 48px;
+  line-height: normal;
 }
 .header__nav .header__menu li {
   cursor: pointer;
   position: relative;
 }
 .header__nav .header__menu li a {
+  display: inline-block;
   color: #000000;
+  padding: 14.5px 0;
   text-decoration: none;
 }
 .header__nav .header__menu li.dropdown::after {
@@ -440,7 +443,8 @@ html {
   margin-left: 10px;
 }
 
-button {
+.btn {
+  width: 100%;
   border: none;
   border-radius: 5px;
   background-color: #634c9f;
@@ -451,6 +455,6 @@ button {
   font-weight: 700;
   line-height: 42px;
 }
-button:hover {
+.btn:hover {
   background-color: #6a5acd;
 }/*# sourceMappingURL=main.css.map */
