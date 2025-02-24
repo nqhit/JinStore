@@ -2,19 +2,7 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Test Reload</title>
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      if (!sessionStorage.getItem("reloaded")) {
-        sessionStorage.setItem("reloaded", "true");
-        setTimeout(() => location.reload(), 500); // Trì hoãn 500ms để tránh lỗi hiển thị
-      } else {
-        sessionStorage.removeItem("reloaded");
-      }
-    });
-  </script>
+  <meta http-equiv="refresh" content="0; URL=/JinStore/" />
 </head>
 
 <body>
