@@ -15,7 +15,7 @@ const Header = () => {
   // Đóng dropdown khi click ra ngoài
   useEffect(() => {
     function handleClickOutside(event) {
-      if (!event.target.closest('.header__account-container')) {
+      if (!event.target.closest('.header__account')) {
         setIsOpen(false);
       }
     }
@@ -72,8 +72,8 @@ const Header = () => {
             </div>
             <div className="header__icons">
               {/* Nút Account */}
-              <div className="header__account-container">
-                <Button onClick={() => setIsOpen(!isOpen)} className="header__account">
+              <div className="header__account">
+                <Button onClick={() => setIsOpen(!isOpen)} className="header__account-btn">
                   <img src={actor} alt="Actor" />
                   <strong>Account</strong>
                 </Button>

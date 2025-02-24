@@ -230,6 +230,10 @@ html {
   gap: 15px;
 }
 .header__main .header__icons .header__account {
+  position: relative;
+  display: inline-block;
+}
+.header__main .header__icons .header__account-btn {
   padding: 0;
   cursor: pointer;
   display: flex;
@@ -238,18 +242,14 @@ html {
   gap: 20px;
   background-color: transparent;
 }
-.header__main .header__icons .header__account strong {
+.header__main .header__icons .header__account-btn strong {
   color: #030712;
   font-size: 15px;
   font-style: normal;
   font-weight: 500;
   line-height: 15.6px; /* 120% */
 }
-.header__main .header__icons .header__account-container {
-  position: relative;
-  display: inline-block;
-}
-.header__main .header__icons .dropdown-menu {
+.header__main .header__icons .header__account .dropdown-menu {
   margin-top: 10px;
   position: absolute;
   top: 100%;
@@ -265,7 +265,7 @@ html {
   flex-direction: column;
   z-index: 100;
 }
-.header__main .header__icons .dropdown-menu a {
+.header__main .header__icons .header__account .dropdown-menu a {
   width: 100%;
   text-decoration: none;
   color: #333;
@@ -273,7 +273,7 @@ html {
   display: block;
   font-size: 14px;
 }
-.header__main .header__icons .dropdown-menu a:hover {
+.header__main .header__icons .header__account .dropdown-menu a:hover {
   background-color: #f0f0f0;
 }
 .header__main .header__icons .header__wishlist,

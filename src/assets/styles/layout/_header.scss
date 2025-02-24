@@ -128,55 +128,54 @@
       gap: 15px;
 
       .header__account {
-        padding: 0;
-        cursor: pointer;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 20px;
-        background-color: transparent;
-        strong {
-          color: #030712;
-          font-size: 15px;
-          font-style: normal;
-          font-weight: 500;
-          line-height: 15.6px; /* 120% */
-        }
-      }
-
-      .header__account-container {
         position: relative;
         display: inline-block;
-      }
 
-      .dropdown-menu {
-        margin-top: 10px;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        background: white;
-        border-radius: 8px;
-        border: 1px solid #e0e0e0;
-        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-        padding: 10px;
-        display: flex;
-        min-width: 200px;
-        flex-direction: column;
-        z-index: 100;
-      }
+        &-btn {
+          padding: 0;
+          cursor: pointer;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 20px;
+          background-color: transparent;
+          strong {
+            color: #030712;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 15.6px; /* 120% */
+          }
+        }
 
-      .dropdown-menu a {
-        width: 100%;
-        text-decoration: none;
-        color: #333;
-        padding: 8px 12px;
-        display: block;
-        font-size: 14px;
-      }
+        .dropdown-menu {
+          margin-top: 10px;
+          position: absolute;
+          top: 100%;
+          left: 0;
+          right: 0;
+          background: white;
+          border-radius: 8px;
+          border: 1px solid #e0e0e0;
+          box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+          padding: 10px;
+          display: flex;
+          min-width: 200px;
+          flex-direction: column;
+          z-index: 100;
 
-      .dropdown-menu a:hover {
-        background-color: #f0f0f0;
+          a {
+            width: 100%;
+            text-decoration: none;
+            color: #333;
+            padding: 8px 12px;
+            display: block;
+            font-size: 14px;
+            &:hover {
+              background-color: #f0f0f0;
+            }
+          }
+        }
       }
 
       .header__wishlist,
