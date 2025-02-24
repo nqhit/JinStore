@@ -2,25 +2,10 @@
 <html lang="en">
 
 <head>
-  <script>
-    // Lưu địa chỉ hiện tại vào localStorage (nếu chưa có)
-    if (!localStorage.getItem("savedPage")) {
-      localStorage.setItem("savedPage", window.location.href);
-    }
-
-    // Khi trang load lại, đảm bảo địa chỉ không thay đổi
-    window.addEventListener("load", function () {
-      const savedURL = localStorage.getItem("savedPage");
-
-      if (savedURL && savedURL !== window.location.href) {
-        window.location.href = savedURL; // Đảm bảo trang giữ nguyên địa chỉ
-      }
-    });
-  </script>
+  <meta http-equiv="refresh" content="0; URL=/JinStore/" />
 </head>
 
 <body>
-
 </body>
 
 </html>
