@@ -8,12 +8,12 @@ import Login from './pages/Login';
 import { Fragment } from 'react';
 
 const App = () => {
-  const location = useLocation();
-  const isLoginPage = location.pathname === '/login';
+  /*   const location = useLocation();
+  const isLoginPage = location.pathname === '/login'; */
 
   return (
     <Fragment>
-      {!isLoginPage && <Notification__bar />}
+      {/* {!isLoginPage && <Notification__bar />} */}
       <Header />
       <div className="container">
         <Routes>
