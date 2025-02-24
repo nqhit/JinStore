@@ -204,25 +204,29 @@ html {
   color: #000000;
 }
 .header__main .header__search {
+  width: 100%;
   flex: 1;
   display: flex;
   align-items: center;
   justify-content: space-between;
   border-radius: 8px;
-  background-color: #f3f4f6;
+  border: 1px solid #a5a5a5;
+  background-color: #ffffff;
 }
 .header__main .header__search input {
-  width: 100%;
+  flex-grow: 1;
   padding: 14.5px 45px 14.5px 18px;
   align-items: center;
   border: none;
   background-color: transparent;
 }
 .header__main .header__search-button {
-  padding: 0 14.5px;
+  flex-grow: 0;
+  padding: 9.5px 14.5px;
   background: transparent;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
   border-left: 1px solid #a5a5a5;
-  cursor: pointer;
 }
 .header__main .header__icons {
   display: flex;
@@ -237,11 +241,12 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10.5px;
   gap: 20px;
-  cursor: pointer;
+  border-radius: 8px;
+  padding: 10.5px;
+  border: 1px solid #a5a5a5;
   background-color: transparent;
-  border: 1px solid #ddd;
+  cursor: pointer;
 }
 .header__main .header__icons .header__account-btn strong {
   color: #030712;
@@ -436,8 +441,6 @@ html {
 }
 
 button {
-  width: 100%;
-  cursor: pointer;
   border: none;
   border-radius: 5px;
   background-color: #634c9f;

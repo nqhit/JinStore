@@ -97,15 +97,18 @@
     }
 
     .header__search {
+      width: 100%;
       flex: 1;
       display: flex;
       align-items: center;
       justify-content: space-between;
       border-radius: 8px;
-      background-color: #f3f4f6;
+      border: 1px solid #a5a5a5;
+
+      background-color: $color-main-background;
 
       input {
-        width: 100%;
+        flex-grow: 1;
         padding: 14.5px 45px 14.5px 18px;
         align-items: center;
         border: none;
@@ -113,12 +116,12 @@
       }
 
       &-button {
-        padding: 0 14.5px;
+        flex-grow: 0;
+        padding: 9.5px 14.5px;
         background: transparent;
-        // border-top-left-radius: 0;
-        // border-bottom-left-radius: 0;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
         border-left: 1px solid #a5a5a5;
-        cursor: pointer;
       }
     }
 
@@ -135,11 +138,12 @@
           display: flex;
           justify-content: center;
           align-items: center;
-          padding: 10.5px;
           gap: 20px;
-          cursor: pointer;
+          border-radius: 8px;
+          padding: 10.5px;
+          border: 1px solid #a5a5a5;
           background-color: transparent;
-          border: 1px solid #ddd;
+          cursor: pointer;
 
           strong {
             color: #030712;

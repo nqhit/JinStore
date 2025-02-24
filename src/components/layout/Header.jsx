@@ -66,9 +66,9 @@ const Header = () => {
             </div>
             <div className="header__search">
               <input type="text" placeholder="Search for products, categories or brands..." />
-              <div className="header__search-button">
+              <Button /* onClick={} */ className="header__search-button">
                 <img src={SearchButton} alt="Search Button" />
-              </div>
+              </Button>
             </div>
             <div className="header__icons">
               {/* Nút Account */}
