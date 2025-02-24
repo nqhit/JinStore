@@ -3,9 +3,14 @@
 
 <head>
   <script>
-    window.onload = function () {
-      window.location.href = window.location.href; // Giữ nguyên URL khi refresh
-    };
+    document.addEventListener("DOMContentLoaded", function () {
+      if (!sessionStorage.getItem("reloaded")) {
+        sessionStorage.setItem("reloaded", "true");
+        location.reload();
+      } else {
+        sessionStorage.removeItem("reloaded");
+      }
+    });
   </script>
 </head>
 
