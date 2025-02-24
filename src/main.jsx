@@ -5,7 +5,7 @@ import App from './App';
 
 createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <BrowserRouter basename="JinStore">
+    <BrowserRouter basename="/JinStore">
       <App />
     </BrowserRouter>
   </React.StrictMode>,
