@@ -16,16 +16,6 @@
 <body>
   <noscript>You need to enable JavaScript to run this app.</noscript>
   <div id="root" class="root"></div>
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      if (!sessionStorage.getItem("reloaded")) {
-        sessionStorage.setItem("reloaded", "true");
-        setTimeout(() => location.reload(), 500); // Trì hoãn 500ms để tránh lỗi hiển thị
-      } else {
-        sessionStorage.removeItem("reloaded");
-      }
-    });
-  </script>
 </body>
 
 </html>

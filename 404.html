@@ -1,4 +1,4 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -7,18 +7,10 @@
   <title>Test Reload</title>
   <script>
     document.addEventListener("DOMContentLoaded", function () {
-      console.log("DOMContentLoaded fired!");
-
       if (!sessionStorage.getItem("reloaded")) {
-        console.log("Reloading the page...");
         sessionStorage.setItem("reloaded", "true");
-
-        // Trì hoãn reload để kiểm tra
-        setTimeout(() => {
-          location.reload();
-        }, 500);
+        setTimeout(() => location.reload(), 500); // Trì hoãn 500ms để tránh lỗi hiển thị
       } else {
-        console.log("Page already reloaded once.");
         sessionStorage.removeItem("reloaded");
       }
     });
@@ -26,8 +18,6 @@
 </head>
 
 <body>
-  <h1>Trang đã tải xong!</h1>
-  <p>Nếu bạn thấy trang này bị tải lại liên tục, hãy kiểm tra console.</p>
 </body>
 
-</html> -->
+</html>
