@@ -25,7 +25,7 @@ const Header = () => {
   return (
     <Fragment>
       <header className="header">
-        <section className="header__top">
+        {/*         <section className="header__top">
           <div className="header__top-content">
             <div className="header__top-left">
               <a className="header__top-item__link" href="#">
@@ -48,7 +48,7 @@ const Header = () => {
               <a href="#">Order Tracking</a>
             </div>
           </div>
-        </section>
+        </section> */}
         <section className="header__main">
           <div className="header__main-content">
             <div className="header__logo">
@@ -81,8 +81,12 @@ const Header = () => {
                 {/* Dropdown menu */}
                 {isOpen && (
                   <div className="dropdown-menu">
-                    <Link to="/login">Sign In</Link>
-                    <Link to="/register">Create an Account</Link>
+                    <Link to="/login" onClick={() => setIsOpen(false)}>
+                      Sign In
+                    </Link>
+                    <Link to="/register" onClick={() => setIsOpen(false)}>
+                      Create an Account
+                    </Link>
                   </div>
                 )}
               </div>
@@ -106,7 +110,7 @@ const Header = () => {
                   <Link to="/">Home</Link>
                 </a>
               </li>
-              <li className="dropdown">
+              <li /* className="dropdown" */>
                 <a href="#">Shop</a>
               </li>
               <li>
@@ -120,6 +124,9 @@ const Header = () => {
               </li>
               <li>
                 <a href="#">Contact</a>
+              </li>
+              <li>
+                <a href="#">About us</a>
               </li>
             </ul>
           </div>
