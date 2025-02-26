@@ -2,12 +2,12 @@ import { Fragment, useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Button from '@components/ui/Button';
 
-import logotext from '@assets/icons/logotext.png';
-import local from '@assets/icons/local.svg';
-import SearchButton from '@assets/icons/SearchButton.svg';
-import cartshopping from '@assets/icons/cartshopping.svg';
-import iconheart from '@assets/icons/icon-heart.svg';
-import actor from '@assets/icons/actor.svg';
+import logoFull from '@assets/images/logo-full.png';
+import iconLocation from '@assets/icons/icon-location.svg';
+import iconSearch from '@assets/icons/icon-search.svg';
+import iconCart from '@assets/icons/icon-cart.svg';
+import iconHeart from '@assets/icons/icon-heart.svg';
+import iconUser from '@assets/icons/icon-user.svg';
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -53,11 +53,11 @@ const Header = () => {
           <div className="header__main-content">
             <div className="header__logo">
               <Link to="/">
-                <img src={logotext} alt="JinStore" />
+                <img src={logoFull} alt="JinStore" />
               </Link>
             </div>
             <div className="header__location">
-              <img src={local} alt="local" />
+              <img src={iconLocation} alt="local" />
               <span className="header__location-text">
                 Deliver to
                 <br />
@@ -67,14 +67,14 @@ const Header = () => {
             <div className="header__search">
               <input type="text" placeholder="Search for products, categories or brands..." />
               <Button /* onClick={} */ className="header__search-button">
-                <img src={SearchButton} alt="Search Button" />
+                <img src={iconSearch} alt="Search Button" />
               </Button>
             </div>
             <div className="header__icons">
               {/* Nút Account */}
               <div className="header__account">
                 <Button onClick={() => setIsOpen(!isOpen)} className="header__account-btn">
-                  <img src={actor} alt="Actor" />
+                  <img src={iconUser} alt="Actor" />
                   <strong>Account</strong>
                 </Button>
 
@@ -92,11 +92,11 @@ const Header = () => {
               </div>
               <div className="header__wishlist">
                 <i className="icon-heart"></i>
-                <img src={iconheart} alt="icon-heart" />
+                <img src={iconHeart} alt="icon-heart" />
                 <span className="header__count">0</span>
               </div>
               <div className="header__cart">
-                <img src={cartshopping} alt="icon-cart-shopping" />
+                <img src={iconCart} alt="icon-cart-shopping" />
                 <span className="header__count">0</span>
               </div>
             </div>
