@@ -1,0 +1,34 @@
+@import '../base/variables';
+.contact {
+  &__header {
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 60px;
+    border-bottom: 1px solid #e5e7eb;
+    .content {
+      &__title {
+        color: $color-dark-text;
+        font-size: 5.6rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 72.8px;
+
+        &-suptext {
+          color: $color-dark-text;
+          font-size: 1.3rem;
+          font-style: normal;
+          font-weight: 600;
+          line-height: normal;
+        }
+      }
+      
+      &__subtext {
+        color: $color-dark-text;
+        font-size: 1.6rem;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 27px;
+      }
+    }
+  }
+}

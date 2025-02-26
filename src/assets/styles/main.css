@@ -363,6 +363,34 @@ html {
   border-radius: 8px;
 }
 
+.contact__header {
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 60px;
+  border-bottom: 1px solid #e5e7eb;
+}
+.contact__header .content__title {
+  color: #000000;
+  font-size: 5.6rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 72.8px;
+}
+.contact__header .content__title-suptext {
+  color: #000000;
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.contact__header .content__subtext {
+  color: #000000;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 27px;
+}
+
 .login-container {
   max-width: 480px;
   margin: 50px auto;
@@ -510,6 +538,46 @@ html {
   border-radius: 4px;
   cursor: pointer;
   font-size: 1.6rem;
+}
+
+.notfound {
+  margin: 90px 0;
+}
+.notfound__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.notfound__title {
+  color: #000000;
+  text-align: center;
+  font-size: 5.6rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 72.8px; /* 130% */
+  letter-spacing: -1.12px;
+}
+.notfound__subtext {
+  width: 486.75px;
+  margin: 11px 0 33px;
+  color: #6B7280;
+  text-align: center;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 27px;
+}
+.notfound .btn-back-home {
+  width: auto;
+  padding: 0 20px;
+  display: inline-block;
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 42px;
 }
 
 .btn {

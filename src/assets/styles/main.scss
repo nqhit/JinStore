@@ -8,7 +8,9 @@
 @use './layout/footer';
 
 @use './page/home';
+@use './page/contact';
 @use './page/login';
 @use './page/register';
+@use './page/notfound';
 
 @use './ui/button';
