@@ -5,7 +5,7 @@
 ## 🚀 Cách sử dụng
 
 Bạn có thể truy cập trang web được deploy tại:  
-👉 [JinStore trên GitHub Pages](https://nqhit.github.io/JinStore.com/)
+👉 [JinStore trên GitHub Pages](https://nqhit.github.io/JinStore/)
 
 ## ⚠️ Lưu ý
 
