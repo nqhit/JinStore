@@ -1,4 +1,4 @@
-# JinStore - Build Files
+# JinStore - Build Files (Đang trong quá trình hoàn thiện sản phẩm)
 
 Đây là repository chứa các file đã build (`dist`) cho **JinStore**.
 
